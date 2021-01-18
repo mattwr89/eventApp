@@ -1,24 +1,13 @@
-# README
+## EventApp
+Application for Events 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+![welcome](app/assets/images/Home.png)
 
-Things you may want to cover:
+### Event details
 
-* Ruby version
+![event](app/assets/images/event.png)
 
-* System dependencies
+### Event editor
 
-* Configuration
+![event](app/assets/images/crud.png)
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
