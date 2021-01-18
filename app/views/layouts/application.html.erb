@@ -1,16 +1,60 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>EventApp</title>
+    <title>EventApp - Your place to buy tickets</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+  
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+
+   
+    <header class="container">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="/">EventApp</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+              </ul>
+              <a class="d-flex">
+                 <a href="/users/sign_in" class="btn btn-outline-primary">Sign in</a> 
+              </a>
+                <a class="d-flex">
+                 <a href="/users/sign_up" class="btn btn-outline-secondary">Sing up</a>
+              </a>
+            </div>
+          </div>
+        </nav>
+    </header>
+    
     <%= yield %>
+
+     <p class="notice"><%= notice %></p>
+     <p class="alert"><%= alert %></p>
+
+      <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="#">Back to top</a>
+        </p>
+        <p>EventApp &copy; Tickets online, capture your dream and grab your ticket.</p>
+        <p>New to EventApp? <a href="../../">Visit the homepage</a></p>
+      </div>
+    </footer>
+
   </body>
 </html>
